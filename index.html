@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chompistore - Costa Rica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ====== BARRA LATERAL ====== -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h2>Chompistore👟</h2>
+            <p>Pura Vida Style</p>
+        </div>
+        
+        <nav class="nav-categories">
+            <h3><i class="fas fa-tshirt"></i> Categorías</h3>
+            <ul>
+                <li class="active"><a href="#" data-categoria="todos"><i class="fas fa-shoe-prints"></i> Todos</a></li>
+                <li><a href="#" data-categoria="deportivos"><i class="fas fa-running"></i> Tenis Deportivos</a></li>
+                <li><a href="#" data-categoria="casuales"><i class="fas fa-shoe-prints"></i> Tenis Casuales</a></li>
+                <li><a href="#" data-categoria="pantalones"><i class="fas fa-tag"></i> Pantalones Urbanos</a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <p><i class="fas fa-truck"></i> Envíos a todo el país</p>
+            <p><i class="fas fa-plane"></i> Importamos desde Colombia</p>
+        </div>
+    </aside>
+
+    <!-- ====== CONTENIDO PRINCIPAL ====== -->
+    <main class="main-content">
+        <!-- ====== HEADER ====== -->
+        <header class="header">
+            <div class="header-top">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar productos...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header-actions">
+                    <!-- Botón modo claro/oscuro -->
+                    <button id="themeToggle" class="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <!-- Carrito -->
+                    <div class="cart" id="cartToggle">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartCount">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BANNER DE ENVÍOS -->
+            <div class="shipping-banner">
+                <div class="shipping-content">
+                    <i class="fas fa-truck-fast"></i>
+                    <div>
+                        <h3>🚚 ENVÍOS Y ENTREGAS A TODO EL PAÍS</h3>
+                        <p>Entregas Todo el Pais 78 horas Lo mejor en calidad</p>
+                    </div>
+                    <i class="fas fa-flag-checkered"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- ====== CATÁLOGO DE PRODUCTOS ====== -->
+        <section class="catalog">
+            <div class="section-title">
+                <h2>🔥 Últimos Lanzamientos</h2>
+                <p>La esencia LK</p>
+            </div>
+
+            <div class="products-grid" id="productGrid">
+                <!-- ====== TENIS DEPORTIVOS ====== -->
+                
+                <!-- Producto 1 - Nike Shox (DEPORTIVO) -->
+                <div class="product-card" data-categoria="deportivos">
+                    <div class="product-image" style="background: url('https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/9a5a8f5b-2898-431b-a8ca-2916f364818e/W+SHOX+TL.png') center/cover;">
+                        <span class="badge">Oferta🔥</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Nike Shox</h4>
+                        <p class="product-desc">Calzado 39-45</p>
+                        <div class="product-footer">
+                            <span class="price">₡45.000</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 - Jordan 4 (DEPORTIVO) -->
+                <div class="product-card" data-categoria="deportivos">
+                    <div class="product-image" style="background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/316de1b6-f526-4f5c-8683-af5420a20680/AIR+JORDAN+4+RETRO.png') center/cover;">
+                        <span class="badge">🔥 Exclusivo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Jordan 4</h4>
+                        <p class="product-desc">Calzado 39-45</p>
+                        <div class="product-footer">
+                            <span class="price">₡55.000</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 - Tacos Nike (DEPORTIVO) -->
+                <div class="product-card" data-categoria="deportivos">
+                    <div class="product-image" style="background: url('https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f566f622-874a-4ecd-9bd1-47f52cbe8c53/ZM+SUPERFLY+10+ELITE+FG+LV8.png') center/cover;">
+                        <span class="badge">🔥 Exclusivo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Tacos Nike</h4>
+                        <p class="product-desc">Importados directamente</p>
+                        <div class="product-footer">
+                            <span class="price">₡55.000</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 - Lokal Big Moradas (DEPORTIVO) -->
+                <div class="product-card" data-categoria="deportivos">
+                    <div class="product-image" style="background: url('https://images.tcdn.com.br/img/img_prod/703344/tenis_lokal_big_preto_roxo_9624_1_81a416a7aa2b707de690f54cbe57880b.jpg') center/cover;">
+                        <span class="badge">🔥 Exclusivo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Lokal Big Moradas</h4>
+                        <p class="product-desc">Calzado 30-45</p>
+                        <div class="product-footer">
+                            <span class="price">₡46.750</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 - Dc Court Graffik (DEPORTIVO) -->
+                <div class="product-card" data-categoria="deportivos">
+                    <div class="product-image" style="background: url('https://images.boardriders.com/global/dcshoes-products/all/default/xlarge/adbs100303_dcshoes,p_bc6_frt2.jpg') center/cover;">
+                        <span class="badge">🔥 Exclusivo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Dc Court Graffik</h4>
+                        <p class="product-desc">Calzado 30-45</p>
+                        <div class="product-footer">
+                            <span class="price">₡38.500</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====== TENIS CASUALES ====== -->
+                
+                <!-- Producto 3 - TN Air Max (CASUAL) -->
+                <div class="product-card" data-categoria="casuales">
+                    <div class="product-image" style="background: url('https://www.calzatodopaisa.com/wp-content/uploads/2025/10/Tenis-Nike-Air-Max-Tn-Plus-Para-Mujer-5.webp') center/cover;">
+                        <span class="badge">Ultimas🔥</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>TN Air Max</h4>
+                        <p class="product-desc">Estilo colombiano</p>
+                        <div class="product-footer">
+                            <span class="price">₡38.000</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 - TN Nike (CASUAL) -->
+                <div class="product-card" data-categoria="casuales">
+                    <div class="product-image" style="background: url('http://sneakerstaxxau.com/cdn/shop/files/NIKE-AIR-MAX-PLUS-TN-RED-MONOGRAM.jpg?v=1688449434') center/cover;">
+                        <span class="badge">🔥 Exclusivo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>TN Nike</h4>
+                        <p class="product-desc">Calzado 38-42</p>
+                        <div class="product-footer">
+                            <span class="price">₡55.000</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ====== PANTALONES URBANOS ====== -->
+                
+                <!-- Producto 2 - Pantalones Urbanos -->
+                <div class="product-card" data-categoria="pantalones">
+                    <div class="product-image" style="background: url('https://i.pinimg.com/originals/31/40/a3/3140a3ba5117866a303d6cfaab217171.jpg') center/cover;">
+                        <span class="badge">Oferta</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>Pantalones Urbanos</h4>
+                        <p class="product-desc">Estilo costarricense</p>
+                        <div class="product-footer">
+                            <span class="price">₡24.900</span>
+                            <button class="btn-add"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PANEL DEL CARRITO (se despliega desde la derecha) ====== -->
+        <div class="cart-panel" id="cartPanel">
+            <div class="cart-header">
+                <h3>🛒 Tu Carrito</h3>
+                <button id="closeCart" class="close-cart">✕</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <div class="cart-empty">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Tu carrito está vacío</p>
+                    <p class="cart-empty-sub">¡Agrega tus productos favoritos!</p>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">₡0</span>
+                </div>
+                <button class="btn-checkout">Proceder al pago</button>
+            </div>
+        </div>
+
+        <!-- ====== FOOTER ====== -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div>
+                    <h4>📍 LedezmaKicks</h4>
+                    <p>La Grasa LK</p>
+                    <p>Importamos desde Colombia</p>
+                </div>
+                <div>
+                    <h4>📞 Contacto</h4>
+                    <p>WhatsApp: +506 8803-4708</p>
+                    <p>Email: info@ledezmakicks.com</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ledezmakicks" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@ledezma.kicks" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/tu-usuario" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>La mera Grasa</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
