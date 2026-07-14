@@ -21,7 +21,7 @@
                 <li class="active"><a href="#" data-categoria="todos"><i class="fas fa-shoe-prints"></i> Todos</a></li>
                 <li><a href="#" data-categoria="deportivos"><i class="fas fa-running"></i> Tenis Deportivos</a></li>
                 <li><a href="#" data-categoria="casuales"><i class="fas fa-shoe-prints"></i> Tenis Casuales</a></li>
-                <li><a href="#" data-categoria="pantalones"><i class="fas fa-tag"></i> Pantalones Urbanos</a></li>
+                <li><a href="#" data-categoria="pantalones"><i class="fas fa-tag"></i> Pantalones</a></li>
             </ul>
         </nav>
 
@@ -74,7 +74,7 @@
             </div>
 
             <div class="products-grid" id="productGrid">
-                <!-- ====== TENIS DEPORTIVOS ====== -->
+                <!-- ====== Zapato Deportivo ====== -->
                 
                 <!-- Producto 1 - Nike Shox (DEPORTIVO) -->
                 <div class="product-card" data-categoria="deportivos" onclick="openDetail(0)">
@@ -183,10 +183,25 @@
                     </div>
                 </div>
 
+                 <!-- Producto 8 - TN Nike Plus OG (CASUAL) -->
+                <div class="product-card" data-categoria="casuales" onclick="openDetail(7)">
+                    <div class="product-image" style="background: url('https://cms-cdn.thesolesupplier.co.uk/2023/03/nike-tn-air-max-plus-og-hyper-blue-2.jpg') center/cover;">
+                        <span class="badge">🔥 Exclusivo</span>
+                    </div>
+                    <div class="product-info">
+                        <h4>TN Nike Plus OG</h4>
+                        <p class="product-desc">Calzado 38-42</p>
+                        <div class="product-footer">
+                            <span class="price">₡55.000</span>
+                            <button class="btn-add" onclick="event.stopPropagation();"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- ====== PANTALONES URBANOS ====== -->
                 
-                <!-- Producto 8 - Pantalones Urbanos -->
-                <div class="product-card" data-categoria="pantalones" onclick="openDetail(7)">
+               <!-- Producto 9 - Pantalones Urbanos -->
+                <div class="product-card" data-categoria="pantalones" onclick="openDetail(8)">
                     <div class="product-image" style="background: url('https://i.pinimg.com/originals/31/40/a3/3140a3ba5117866a303d6cfaab217171.jpg') center/cover;">
                         <span class="badge">Oferta</span>
                     </div>
@@ -199,11 +214,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <!-- ====== PANEL DE DETALLE DEL PRODUCTO ====== -->
+                <!-- ====== PANEL DE DETALLE DEL PRODUCTO (MEJORADO) ====== -->
         <div class="detail-panel" id="detailPanel">
+            <div class="detail-header">
+                <button id="closeDetail" class="close-detail">✕</button>
+            </div>
             <div class="detail-content" id="detailContent">
                 <!-- El contenido se genera con JavaScript -->
             </div>
@@ -245,9 +262,8 @@
                     <p>Email: info@chompistore.com</p>
                 </div>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/ledezmakicks" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@ledezma.kicks" target="_blank"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.facebook.com/tu-usuario" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/feliipe.ez" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@felipechm1" target="_blank"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -257,5 +273,9 @@
     </main>
 
     <script src="script.js"></script>
+        <!-- ====== ELEMENTO VOLADOR PARA ANIMACIÓN DEL CARRITO ====== -->
+    <div id="flyingItem" class="flying-item">
+        <i class="fas fa-shopping-cart"></i>
+    </div>
 </body>
 </html>
